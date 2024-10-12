@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="Author" content="Вибираний Мар'ян Вячеславович">
+    <meta name="Description" content="Сторінка автора">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link title="стилі" rel="stylesheet" href="css/mycss.css">
+    <title>Web Lab # 1</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Про автора</a>
+            <a href="company.html">Моя компанія</a>
+            <a href="news.html">Новини</a>
+            <a href="form.html">Замовити подарунок</a>
+            <a href="svg.html">SVG</a>
+            <a href="forms.html">Forms</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main-content">
+                <a href="#" onclick="allInfo()">Run Task</a>
+                <a href="#" onclick="arrTask()">Array Task</a>
+
+                <br>
+                <h2>Пошук інформації у тексті</h2>
+                <form id="searchForm">
+                    <label for="inputText">Введіть текст:</label>
+                    <textarea id="inputText" rows="5" cols="50"></textarea>
+                    <button type="button" onclick="searchInfo()">Пошук інформації</button>
+                </form>
+
+                <h3>Результати:</h3>
+                <p>Кількість слів: <span id="wordCount">0</span></p>
+                <p>Кількість цифр: <span id="digitCount">0</span></p>
+                <p>Кількість цілих чисел: <span id="integerCount">0</span></p>
+                <p>Кількість літер "а": <span id="letterACount">0</span></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

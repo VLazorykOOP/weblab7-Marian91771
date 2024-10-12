@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mycss.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Про автора</a>
+            <a href="company.html">Моя компанія</a>
+            <a href="news.html">Новини</a>
+            <a href="form.html">Замовити подарунок</a>
+            <a href="svg.html">SVG</a>
+            <a href="forms.html">Forms</a>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <h2>Замовлення подарунку</h2>
+
+            <form action="#" method="post">
+                <div class="vidpravnuk">
+                    <legend>Інформація про відправника</legend>
+                    <label>
+                        <span>Ім'я відправника</span><br>
+                        <input type="text" placeholder="Ім'я" name="name" required><br>
+                    </label>
+                    <label>
+                        <span>Номер телефону відправника</span><br>
+                        <input type="tel" placeholder="Телефон" name="tel" required><br>
+                    </label>
+                </div>
+
+                <div class="otrumyvach">
+                    <legend>Інформація про отримувача</legend>
+                    <label>
+                        <span>Ім'я отримувача</span><br>
+                        <input type="text" placeholder="Ім'я" name="name" required><br>
+                    </label>
+                    <label>
+                        <span>Номер телефону отримувача</span><br>
+                        <input type="tel" placeholder="Телефон" name="tel" required><br>
+                    </label>
+                    <label>
+                        <span>Адрес доставки</span><br>
+                        <input type="text" placeholder="Адрес" name="adress" required><br>
+                    </label>
+                </div>
+
+                <div class="order-details">
+                    <legend>Деталі замовлення</legend>
+                    <label>
+                        <span>Оберіь товар</span><br>
+                        <input type="text" placeholder="Товар" name="product" required><br>
+                    </label>
+                    <label>
+                        <span>Оберіь кількіст</span><br>
+                        <input type="number" placeholder="Кількіст" name="numbers" min="1" required><br>
+                    </label>
+                    <label>
+                        <span>Колір упаковки</span><br>
+                        <input type="color" name="color" required><br>
+                    </label>
+                    <label>
+                        <span>Дата подарунку</span><br>
+                        <input type="datetime-local" name="datetime-local" required><br>
+                    </label>
+                    <label>
+                        <span>Коментар</span><br>
+                        <textarea id="text-area" name="message" placeholder="Максимум 100 символів" maxlength="100"></textarea><br>
+                        <p>Залишилося символів: <span id="char-count">100</span></p>
+                    </label>
+                </div>
+
+                <div class="shipping">
+                    <legend>Спосіб доставки</legend>
+                    <select name="shipping">
+                        <optgroup label="доставка">
+                            <option value="volvo">Нова пошта</option>
+                            <option value="saab">Укр пошта</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="buttons">
+                    <input type="reset" name="reset" value="Скинути">
+                    <input type="submit" name="submit" value="Відправити">
+                </div>
+
+
+            </form>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

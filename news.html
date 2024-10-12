@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="Author" content="Вибираний Мар'ян Вячеславович">
+    <meta name="Description" content="Сторінка автора">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mycss.css">
+    <title>Web Lab # 1</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Про автора</a>
+            <a href="company.html">Моя компанія</a>
+            <a href="news.html">Новини</a>
+            <a href="form.html">Замовити подарунок</a>
+            <a href="svg.html">SVG</a>
+            <a href="forms.html">Forms</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Новини</h2>
+            <div id="news-content">
+                <article class="news">
+                    <button onclick="showBtn(this)" class="show-popup"><img src="https://content1.rozetka.com.ua/goods/images/big/10733617.jpg" alt="checvar"></button>
+                    <span class="news-title">З'явилося нове пиво з Чехії</span>
+                    <span><br>Ціна: <sub class="del-price"><del>1400грн</del></sub> 1200грн</span>
+                    <p>Опубліковано: <time datetime="2024-08-26 15:00">12:00</time></p>
+                </article>
+                <article class="news">
+                        <button onclick="showBtn(this)" class="show-popup"><img src="https://content1.rozetka.com.ua/goods/images/big/422951417.jpg" alt="blanc"></button>
+                    <span class="news-title">З'явилося нове пиво з України</span>
+                    <span><br>Ціна: <sub class="del-price"><del>1050грн</del></sub> 900грн</span>
+                    <p>Опубліковано: <time datetime="2024-08-26 15:00">11:00</time></p>
+                </article>
+                <article class="news">
+                    <button onclick="showBtn(this)" class="show-popup"><img src="https://content2.rozetka.com.ua/goods/images/big/269776708.png" alt="Guinness"></button>
+                    <span class="news-title">Новинка Guinness Draught</span>
+                    <span><br>Ціна: <sub class="del-price"><del>3300грн</del></sub> 2800грн</span>
+                    <p>Опубліковано: <time datetime="2024-08-26 15:00">10:00</time></p>
+                </article>
+                <article class="news">
+                    <button onclick="showBtn(this)" class="show-popup"><img src="https://content1.rozetka.com.ua/goods/images/big/422951874.jpg" alt="Blanc"></button>
+                    <span class="news-title">Blanc в металевій банці</span>
+                    <span><br>Ціна: <sub class="del-price"><del>800грн</del></sub> 700грн</span>
+                    <p>Опубліковано: <time datetime="2024-08-26 15:00">09:00</time></p>
+                </article>
+            </div>
+        </div>
+
+        <div id="modal-background">
+            <div id="modal">
+                <span class="close">X</span>
+                <img src="">
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <marquee crollamount="10" behavior="alternate" loop="5">Промокод на -10%: <bdo>пиво10</bdo></marquee>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

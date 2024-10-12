@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta name="Author" content="Вибираний Мар'ян Вячеславович">
+    <meta name="Description" content="Сторінка автора">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Script-Type" content="text/javascript" >
-    <title>Lab7</title>
+    <link title="стилі" rel="stylesheet" href="css/mycss.css">
+    <title>Web Lab # 1</title>
 </head>
-<body>
-    <h1> !!! Додайте свої сторінки сайту створені в лаб. роботах 1-6  </h1>
+
+<body onload="loaded()" onoffline="offline()" onresize="size()">
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Про автора</a>
+            <a href="company.html">Моя компанія</a>
+            <a href="news.html">Новини</a>
+            <a href="form.html">Замовити подарунок</a>
+            <a href="svg.html">SVG</a>
+            <a href="forms.html">Forms</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main-content">
+                <h1 id="title" title="Заголовок сторінки" lang="uk">Сторінка автора Web-сайту</h1>
+                <h5 title="Ім'я автора">Вибираний Мар'ян Вячеславович</h5>
+                <h6 class="subtitle" lang="uk">Тут буде розміщена інформація про мене</h6>
+                <p id="content" title="Про автора">
+                    <i id="TH" title="Подяка">Дякую Вам,</i> шановний відвідувач, за те, що
+                    Ви знайшли час і можливість заглянути на мою сторінку у Всесвітній мережі.
+                </p>
+                <hr>
+                <p id="content" title="Про автора" onclick="dropList()">
+                    Тут я розповім про себе:
+                </p>
+                <ul class="dropList" title="Про автора" style="display: none;">
+                    <li>Навчаюся в ЧНУ на 2 курсі.</li>
+                    <li>Колекціоную масштабні моделі.</li>
+                    <li>Заходите на мою сторінку частіше!</li>
+                </ul>
+                <big class="big-text">Дякую, що відвідав мою сторінку <br></big>
+                <small title="Дякую за відвідування сайту">Наведи на мене курсор</small>
+                <br>
+            </div>
+        </div>
+    </main>
+
+<script src="js/script.js"></script>
 </body>
+
 </html>
