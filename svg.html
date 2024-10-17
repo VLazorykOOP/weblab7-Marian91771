@@ -23,43 +23,9 @@
         </nav>
     </header>
     <main style="text-align: center;">
-        <svg height="400px" width="600px">
-            <rect x="0" y="0" width="600" height="400" fill="none" stroke="black" stroke-width="5px"
-                stroke-opacity="0.5" />
-
-            <!-- координати -->
-            <line x1="10" y1="200" x2="580" y2="200" stroke="black" stroke-width="3" />
-            <line x1="580" y1="200" x2="570" y2="195" stroke="black" stroke-width="3" />
-            <line x1="580" y1="200" x2="570" y2="205" stroke="black" stroke-width="3" />
-            <line x1="200" y1="20" x2="200" y2="390" stroke="black" stroke-width="3" />
-            <line x1="200" y1="20" x2="205" y2="25" stroke="black" stroke-width="3" />
-            <line x1="200" y1="20" x2="195" y2="25" stroke="black" stroke-width="3" />
-
-            <!-- фігури -->
-            <circle cx="100" cy="150" r="50" fill="blue" stroke="black" strokewidth="3">
-                <animate attributeName="fill" from="blue" to="lightskyblue" dur="5s" repeatCount="indefinite" />
-            </circle>
-            <rect x="50" y="200" width="100" height="50" fill="blue" stroke="black" stroke-width="2" />
-            <circle cx="250" cy="150" r="50" fill="blue" stroke="black" stroke-width="3">
-                <animateTransform attributeName="transform" type="translate" from="0 0" to="300 0" dur="5s" repeatCount="indefinite" />
-            </circle>   
-            <rect x="300" y="100" width="50" height="50" fill="blue" stroke="black" stroke-width="2" />
-            <rect x="350" y="150" width="50" height="50" fill="blue" stroke="black" stroke-width="2" />
-            <rect x="200" y="250" width="50" height="50" fill="blue" stroke="black" stroke-width="2" />
-            <rect x="400" y="250" width="50" height="50" fill="blue" stroke="black" stroke-width="2" />
-            <rect x="250" y="300" width="100" height="50" fill="blue" stroke="black" stroke-width="2">
-                <animateTransform attributeName="transform" type="scale" from="1 1" to="1.1 1.1" begin="0s" dur="5s" fill="freeze" />
-            </rect>
-            <polygon points="300,250 350,200 400,250 350,300" fill="blue" stroke="black" stroke-width="2">
-                <animateTransform attributeName="transform" type="rotate" from="0 350 250" to="360 350 250" dur="5s" repeatCount="indefinite" />
-            </polygon>
-
-            <path id="Curve" d="M400,350 Q400,400 550,350" fill="transparent" stroke="none" stroke-width="2" />
-            <text font-size="15" fill="blue">
-                <textPath href="#Curve" startOffset="10%">Мар'ян Вибираний</textPath>
-            </text>
-        </svg>
+        <canvas id="myCanvas" width="600" height="400"></canvas>
     </main>
+    <script src="js/canvas.js"></script>
 </body>
 
 </html>
