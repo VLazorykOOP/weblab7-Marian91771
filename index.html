@@ -11,7 +11,7 @@
     <title>Web Lab # 1</title>
 </head>
 
-<body onload="loaded()" onoffline="offline()" onresize="size()">
+<body><!--  onload="loaded()" onoffline="offline()" onresize="size()" -->
     <header>
         <nav class="navbar">
             <a href="index.html">Про автора</a>
@@ -46,9 +46,24 @@
                 <br>
             </div>
         </div>
+
+
+        <div class="audio-video-block">
+            <audio id="myAudio" controls>
+                <source src="media/music.mp3" type="audio/mpeg">
+            </audio>
+            <br>
+            <video id="myVideo" controls>
+                <source src="media/video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="checkVideoResult"></div>
+        <button onclick="checkVideo()">Check Video Support</button>
+
     </main>
 
-<script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/media.js"></script>
 </body>
 
 </html>

@@ -1,32 +1,30 @@
-var canvas = document.getElementById("myCanvas");
-    var ctx = canvas.getContext("2d");
+let canvas = document.getElementById("myCanvas");
+let ctx = canvas.getContext("2d");
 
-    // Малювання рамки
     ctx.strokeStyle = "black";
     ctx.lineWidth = 5;
     ctx.globalAlpha = 0.5;
     ctx.strokeRect(0, 0, 600, 400);
     ctx.globalAlpha = 1.0;
 
-    // Малювання координатних ліній
     ctx.lineWidth = 3;
     ctx.beginPath();
     ctx.moveTo(10, 200);
-    ctx.lineTo(580, 200); // Горизонтальна лінія
+    ctx.lineTo(580, 200);
     ctx.moveTo(580, 200);
-    ctx.lineTo(570, 195); // Стрілка вправо
+    ctx.lineTo(570, 195);
     ctx.moveTo(580, 200);
     ctx.lineTo(570, 205);
     ctx.moveTo(200, 20);
-    ctx.lineTo(200, 390); // Вертикальна лінія
+    ctx.lineTo(200, 390);
     ctx.moveTo(200, 20);
-    ctx.lineTo(205, 25); // Стрілка вгору
+    ctx.lineTo(205, 25);
     ctx.moveTo(200, 20);
     ctx.lineTo(195, 25);
     ctx.stroke();
 
-    // Опис фігур
-    var shapes = [
+
+    let shapes = [
         { type: "circle", x: 100, y: 150, r: 50, fill: "blue", stroke: "black", strokeWidth: 3, animType: "color", colorPhase: 0 },
         { type: "rect", x: 50, y: 200, width: 100, height: 50, fill: "blue", stroke: "black", strokeWidth: 2 },
         { type: "circle", x: 250, y: 150, r: 50, fill: "blue", stroke: "black", strokeWidth: 3, animType: "translate", dx: 2 },
@@ -39,11 +37,9 @@ var canvas = document.getElementById("myCanvas");
         { type: "text", x: 400, y: 350, text: "Мар'ян Вибираний", font: "15px Arial", fill: "blue" }
     ];
 
-    // Функція для малювання фігур
     function drawShapes() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-        // Малювання рамки та координатних ліній
         ctx.strokeStyle = "black";
         ctx.lineWidth = 5;
         ctx.globalAlpha = 0.5;
@@ -65,7 +61,6 @@ var canvas = document.getElementById("myCanvas");
         ctx.lineTo(195, 25);
         ctx.stroke();
 
-        // Малювання фігур
         shapes.forEach(function(shape) {
             ctx.beginPath();
             ctx.strokeStyle = shape.stroke;
@@ -99,7 +94,6 @@ var canvas = document.getElementById("myCanvas");
         });
     }
 
-    // Функція для анімації
     function animate() {
         shapes.forEach(function(shape) {
             if (shape.animType === "color") {
@@ -129,5 +123,4 @@ var canvas = document.getElementById("myCanvas");
         requestAnimationFrame(animate);
     }
 
-    // Запуск анімації
     animate();
